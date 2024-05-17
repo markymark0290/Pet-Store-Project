@@ -41,5 +41,5 @@ public class PetStore {
 	@EqualsAndHashCode.Exclude
 	@ToString.Exclude
 	@OneToMany(mappedBy = "petStore", cascade = CascadeType.ALL, orphanRemoval = true)
-	Set<Employee> employees = new HashSet<>();
+	private Set<Employee> employees = new HashSet<>();
 }
